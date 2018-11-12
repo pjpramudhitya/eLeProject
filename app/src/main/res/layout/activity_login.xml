@@ -41,7 +41,7 @@
             android:singleLine="true" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/txt_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -75,9 +75,10 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/roundedbutton"
+        android:onClick="login"
         android:text="Login"
-        android:textAlignment="center"
 
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -154,15 +154,57 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.747">
 
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tidak Ada Orderan"
-            android:textColor="#fff"
-            android:textSize="30dp"
-            tools:layout_marginLeft="18dp"
-            tools:layout_marginTop="60dp" />
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pakan Lele 10 Kg"
+                android:textColor="#fff"
+                tools:layout_margin="3dp"
+                tools:padding="5dp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jl. Pemuda no 6, Sagan , Yogyakarta"
+                android:textColor="#fff"
+                tools:layout_margin="3dp"
+                tools:padding="5dp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Catatan : "
+                android:textColor="#fff"
+                tools:layout_marginLeft="3dp"
+                tools:layout_marginTop="8dp"
+                tools:padding="5dp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rumah warna Merah, tingkat 2"
+                android:textColor="#fff"
+                tools:layout_marginLeft="30dp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bottom"
+                android:text="Selesai"
+                android:textColor="#fff"
+                tools:layout_marginTop="15dp" />
+        </LinearLayout>
+
     </FrameLayout>
 
     <LinearLayout

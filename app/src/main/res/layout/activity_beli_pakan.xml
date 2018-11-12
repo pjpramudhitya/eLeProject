@@ -17,16 +17,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_bar">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Konfirmasi\nPembelian"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,7 +37,7 @@
                 android:background="@drawable/rounded_background"
                 android:ems="10"
                 android:inputType="textMultiLine"
-                android:minHeight="64dp" />
+                android:minHeight="32dp" />
 
         </LinearLayout>
 
@@ -55,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingTop="8dp">
+            android:paddingTop="24dp">
 
             <TextView
                 android:id="@+id/txtJumlahBeliPakan"
@@ -64,71 +54,117 @@
                 android:text="Jumlah beli pakan"
                 android:textColor="@android:color/black" />
 
-            <EditText
-                android:id="@+id/txt_botJumlahBeliPakan"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rounded_background"
-                android:ems="10"
-                android:inputType="text|number|numberDecimal" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-        </LinearLayout>
+                <EditText
+                    android:id="@+id/txt_botJumlahBeliPakan"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_background"
+                    android:ems="10"
+                    android:inputType="text|number|numberDecimal"
+                    android:minHeight="32dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingTop="8dp">
-
-            <TextView
-                android:id="@+id/txtTotalPembayaran"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Total pembayaran"
-                android:textColor="@android:color/black" />
-
-            <EditText
-                android:id="@+id/txtShowTotalPembayaran"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rounded_background"
-                android:ems="10" />
+                <TextView
+                    android:id="@+id/kg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="kg"
+                    android:textColor="@android:color/black"
+                    android:textSize="28sp" />
+            </LinearLayout>
 
         </LinearLayout>
 
         <TextView
-            android:id="@+id/keteranganLePay"
+            android:id="@+id/keteranganHarga"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp"
-            android:text="dibayar dengan LePay"
-            android:textColor="#000000"/>
+            android:text="(Harga pakan per kilo: Rp 5.000,00)"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Total"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:paddingTop="8dp">
+            android:layout_height="wrap_content"
+            android:background="#DBDBDB"
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/batal"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:background="@android:color/holo_red_dark"
-                android:text="Batal"
-                android:textColor="@android:color/white" />
+                android:background="@android:color/holo_green_dark"
+                android:text="Rp 25.000"
+                android:textAlignment="textEnd"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
 
-            <Button
-                android:id="@+id/bayar"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/bayarDengan"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:background="@android:color/holo_blue_dark"
-                android:text="Bayar"
-                android:textColor="@android:color/white" />
+                android:layout_marginTop="5dp"
+                android:text="Bayar dengan"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/tunai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@android:color/holo_blue_dark"
+                        android:text="Tunai"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="tambahan Rp 3.000"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/lepay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="Le Pay"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>

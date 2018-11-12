@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="kolam_colorPrimary">#4BA3E8</color>
-    <color name="penjual_colorPrimary">#FF6600</color>
+    <color name="penjual_colorPrimary">#FF6600/color>
     <color name="kolam_colorAccent">#FF4081</color>
     <color name="kolam_colorDarkAccent">#0078D5</color>
+
+    <color name="background">#1D4173</color>
+    <color name="warnaPertama">#FF6600</color>
+    <color name="warnaKedua">#4BA3E8</color>
+    <color name="dark">#D85901</color>
 </resources>

@@ -129,7 +129,7 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Isi Saldo Le-Pay mu!"
+            android:text="FAQ"
             android:textColor="#000000"
             android:textSize="30sp"
             android:textStyle="bold" />
@@ -141,19 +141,18 @@
             android:ems="10"
             android:fontFamily="sans-serif"
             android:inputType="textMultiLine"
-            android:text="Pengisian saldo bisa kamu lakukan lewat ATM bank mana saja lho! \n
-Langkahnya seperti ini : \n
-1. Masukan kartu ATM-mu \n
-2. Pilih menu PEMBAYARAN \n
-3. Pilih PEMBAYARAN LAIN-LAIN atau VIRTUAL ACCOUNT \n
-4. Masukan Virtual Account bank-mu diikuti nomor handphone-mu
-\n Misal : 9999085192340012 \n
-5. Masukan jumlah top-up sesuai keinginanmu. Minimal Rp 10.000,00 \n
-6. Ikuti langkah selanjutnya"
+            android:text="Q: Ini Aplikasi apa ya?\n
+A: Ini Aplikasi eLe \n\n
+Q: Aplikasi Ini Untuk apa?\n
+A: Aplikasi ini untuk membantu peternak memberi makan lele dikolam\n\n
+Q: Bagaimana Cara Pembayaran jika saya ingin membeli pakan lele?\n
+A: Kamu bisa membayar menggunakan LePay\n\n
+Q: Bagaimana bila saldo Lepay saya habis\n
+A: Kamu bisa melakukan topup saldo LePay kamu melalui menu Isi Saldo"
             android:textAlignment="viewStart"
             android:textAllCaps="false"
             android:textColor="#555555"
-            android:textSize="10sp" />
+            android:textSize="12sp" />
 
     </LinearLayout>
 

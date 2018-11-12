@@ -73,7 +73,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/ic_beli_pakan" />
+                app:srcCompat="@drawable/ic_beli_pakan"
+                android:onClick="beliPakan"/>
 
             <ImageView
                 android:id="@+id/btn_isi_saldo"
@@ -82,7 +83,8 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
-                app:srcCompat="@drawable/ic_isi_saldo" />
+                app:srcCompat="@drawable/ic_isi_saldo"
+                android:onClick="isiSaldo"/>
         </LinearLayout>
     </FrameLayout>
 
@@ -216,25 +218,29 @@
             app:srcCompat="@drawable/ic_aktif_home" />
 
         <ImageView
-            android:id="@+id/imageView14"
+            android:id="@+id/btn_riwayat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="riwayat"
             app:srcCompat="@drawable/ic_dis_riwayat" />
 
         <ImageView
-            android:id="@+id/imageView15"
+            android:id="@+id/btn_help"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="bantuan"
             app:srcCompat="@drawable/ic_dis_bantuan" />
 
         <ImageView
-            android:id="@+id/imageView16"
+            android:id="@+id/btn_Akun"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_dis_akun" />
+            app:srcCompat="@drawable/ic_dis_akun"
+            android:onClick="akun"
+            />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

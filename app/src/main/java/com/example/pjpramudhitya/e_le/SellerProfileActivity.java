@@ -18,6 +18,10 @@ public class SellerProfileActivity extends AppCompatActivity {
         startActivity(new Intent(SellerProfileActivity.this, SellerHomeActivity.class));
     }
 
+    public void logout(View v){
+        startActivity(new Intent(SellerProfileActivity.this, LoginActivity.class));
+    }
+
     public void riwayat(View v){
         startActivity(new Intent(SellerProfileActivity.this, SellerRiwayatActivity.class));
     }

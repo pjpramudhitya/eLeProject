@@ -17,6 +17,10 @@ public class KolamProfileActivity extends AppCompatActivity{
 
     }
 
+    public void logout(View v){
+        startActivity(new Intent(KolamProfileActivity.this, LoginActivity.class));
+    }
+
     //Navbar is here
     public void homeBtn(View v){
         startActivity(new Intent(KolamProfileActivity.this, KolamHomeActivity.class));

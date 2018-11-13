@@ -118,6 +118,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_red_dark"
                 android:text="Batal"
+                android:onClick="batalBtn"
                 android:textColor="@android:color/white" />
 
             <Button
@@ -128,6 +129,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/holo_blue_dark"
                 android:text="Bayar"
+                android:onClick="bayarBtn"
                 android:textColor="@android:color/white" />
         </LinearLayout>
 
@@ -217,27 +219,31 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_aktif_home" />
+            android:onClick="homeBtn"
+            app:srcCompat="@drawable/ic_dis_home" />
 
         <ImageView
-            android:id="@+id/imageView14"
+            android:id="@+id/btn_riwayat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="riwayatBtn"
             app:srcCompat="@drawable/ic_dis_riwayat" />
 
         <ImageView
-            android:id="@+id/imageView15"
+            android:id="@+id/btn_bantuan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="bantuanBtn"
             app:srcCompat="@drawable/ic_dis_bantuan" />
 
         <ImageView
-            android:id="@+id/imageView16"
+            android:id="@+id/btn_profile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="profileBtn"
             app:srcCompat="@drawable/ic_dis_akun" />
     </LinearLayout>
 

@@ -74,13 +74,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:layout_weight="1"
-<<<<<<< HEAD
                 android:onClick="beliPakanBtn"
                 app:srcCompat="@drawable/ic_beli_pakan" />
-=======
-                app:srcCompat="@drawable/ic_beli_pakan"
-                android:onClick="beliPakan"/>
->>>>>>> 053265a521d81e64fdea01b1243d7fd7cfcc816a
 
             <ImageView
                 android:id="@+id/btn_isi_saldo"
@@ -89,13 +84,8 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
-<<<<<<< HEAD
                 android:onClick="isiSaldoBtn"
                 app:srcCompat="@drawable/ic_isi_saldo" />
-=======
-                app:srcCompat="@drawable/ic_isi_saldo"
-                android:onClick="isiSaldo"/>
->>>>>>> 053265a521d81e64fdea01b1243d7fd7cfcc816a
         </LinearLayout>
     </FrameLayout>
 
@@ -235,7 +225,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-<<<<<<< HEAD
             android:onClick="riwayatBtn"
             app:srcCompat="@drawable/ic_dis_riwayat" />
 
@@ -254,27 +243,7 @@
             android:layout_weight="1"
             android:onClick="profileBtn"
             app:srcCompat="@drawable/ic_dis_akun" />
-=======
-            android:onClick="riwayat"
-            app:srcCompat="@drawable/ic_dis_riwayat" />
 
-        <ImageView
-            android:id="@+id/btn_help"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="bantuan"
-            app:srcCompat="@drawable/ic_dis_bantuan" />
-
-        <ImageView
-            android:id="@+id/btn_Akun"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_dis_akun"
-            android:onClick="akun"
-            />
->>>>>>> 053265a521d81e64fdea01b1243d7fd7cfcc816a
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

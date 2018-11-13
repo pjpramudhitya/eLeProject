@@ -1,11 +1,10 @@
 package com.example.pjpramudhitya.e_le;
 
-<<<<<<< HEAD
-public class BeliPakanActivity {
-=======
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 public class BeliPakanActivity extends AppCompatActivity {
     @Override
@@ -13,5 +12,25 @@ public class BeliPakanActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_beli_pakan);
     }
->>>>>>> 053265a521d81e64fdea01b1243d7fd7cfcc816a
+
+    public void payLePayBtn(View v){
+        startActivity(new Intent(BeliPakanActivity.this, BeliPakanKonfirmPembayaranActivity.class));
+    }
+
+    //Navbar is here
+    public void homeBtn(View v){
+        startActivity(new Intent(BeliPakanActivity.this, KolamHomeActivity.class));
+    }
+
+    public void riwayatBtn(View v){
+        startActivity(new Intent(BeliPakanActivity.this, KolamRiwayatActivity.class));
+    }
+
+    public void bantuanBtn(View v){
+        startActivity(new Intent(BeliPakanActivity.this, KolamBantuanActivity.class));
+    }
+
+    public void profileBtn(View v){
+        startActivity(new Intent(BeliPakanActivity.this, KolamProfileActivity.class));
+    }
 }

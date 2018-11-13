@@ -1,6 +1,6 @@
 package com.example.pjpramudhitya.e_le;
 
-<<<<<<< HEAD
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
@@ -32,16 +32,4 @@ public class KolamRiwayatActivity extends AppCompatActivity {
     public void profileBtn(View v){
         startActivity(new Intent(KolamRiwayatActivity.this, KolamProfileActivity.class));
     }
-=======
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-
-public class KolamRiwayatActivity extends AppCompatActivity{
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kolam_riwayat);
-    }
->>>>>>> 053265a521d81e64fdea01b1243d7fd7cfcc816a
 }

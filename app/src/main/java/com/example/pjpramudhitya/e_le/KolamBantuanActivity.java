@@ -1,17 +1,31 @@
 package com.example.pjpramudhitya.e_le;
 
-<<<<<<< HEAD
-public class KolamBantuanActivity {
-=======
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 public class KolamBantuanActivity extends AppCompatActivity {
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kolam_bantuan);
     }
->>>>>>> 053265a521d81e64fdea01b1243d7fd7cfcc816a
+
+    //Navbar is here
+    public void homeBtn(View v){
+        startActivity(new Intent(KolamBantuanActivity.this, KolamHomeActivity.class));
+    }
+
+    public void riwayatBtn(View v){
+        startActivity(new Intent(KolamBantuanActivity.this, KolamRiwayatActivity.class));
+    }
+
+    public void bantuanBtn(View v){
+        startActivity(new Intent(KolamBantuanActivity.this, KolamBantuanActivity.class));
+    }
+
+    public void profileBtn(View v){
+        startActivity(new Intent(KolamBantuanActivity.this, KolamProfileActivity.class));
+    }
 }

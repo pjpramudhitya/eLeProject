@@ -52,31 +52,35 @@
         app:layout_constraintVertical_bias="1.0">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/btn_home"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="homeBtn"
             app:srcCompat="@drawable/ic_dis_home" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/btn_riwayat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="riwayatBtn"
             app:srcCompat="@drawable/ic_dis_riwayat" />
 
         <ImageView
-            android:id="@+id/imageView15"
+            android:id="@+id/btn_bantuan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="bantuanBtn"
             app:srcCompat="@drawable/ic_dis_bantuan" />
 
         <ImageView
-            android:id="@+id/imageView16"
+            android:id="@+id/btn_profile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="profileBtn"
             app:srcCompat="@drawable/ic_aktif_akun" />
     </LinearLayout>
 
@@ -225,6 +229,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/roundedbutton"
+        android:onClick="saveBtn"
         android:text="Simpan"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"

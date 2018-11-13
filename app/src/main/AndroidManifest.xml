@@ -17,6 +17,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".KolamHomeActivity"></activity>
+        <activity android:name=".BeliPakanActivity"></activity>
+        <activity android:name=".KolamRiwayatActivity"></activity>
+        <activity android:name=".KolamBantuanActivity"></activity>
+        <activity android:name=".KolamProfileActivity"></activity>
+        <activity android:name=".PengaturanTangkiActivity"></activity>
+        <activity android:name=".BeliPakanKonfirmPembayaranActivity"></activity>
+        <activity android:name=".IsiSaldoActivity"></activity>
+        <activity android:name=".KolamPinLepayActivity"></activity>
+        <activity android:name=".SellerBantuanActivity"></activity>
     </application>
 
 </manifest>

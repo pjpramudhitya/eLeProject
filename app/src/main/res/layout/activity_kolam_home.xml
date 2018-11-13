@@ -30,7 +30,6 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="164dp"
         android:layout_marginTop="8dp"
-        android:onClick="profileBtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.949"
@@ -74,7 +73,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:layout_weight="1"
-                android:onClick="beliPakanBtn"
                 app:srcCompat="@drawable/ic_beli_pakan" />
 
             <ImageView
@@ -84,7 +82,6 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
-                android:onClick="isiSaldoBtn"
                 app:srcCompat="@drawable/ic_isi_saldo" />
         </LinearLayout>
     </FrameLayout>
@@ -132,7 +129,6 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/secondaryroundedbutton"
         android:orientation="horizontal"
-        android:onClick="aturTangkiBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView10">
@@ -217,31 +213,27 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="homeBtn"
             app:srcCompat="@drawable/ic_aktif_home" />
 
         <ImageView
-            android:id="@+id/btn_riwayat"
+            android:id="@+id/imageView14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="riwayatBtn"
             app:srcCompat="@drawable/ic_dis_riwayat" />
 
         <ImageView
-            android:id="@+id/btn_bantuan"
+            android:id="@+id/imageView15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="bantuanBtn"
             app:srcCompat="@drawable/ic_dis_bantuan" />
 
         <ImageView
-            android:id="@+id/btn_profile"
+            android:id="@+id/imageView16"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="profileBtn"
             app:srcCompat="@drawable/ic_dis_akun" />
     </LinearLayout>
 

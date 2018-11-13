@@ -143,6 +143,7 @@
                         android:layout_marginBottom="5dp"
                         android:background="@android:color/holo_blue_dark"
                         android:text="Tunai"
+                        android:onClick="payLePayBtn"
                         android:textColor="@android:color/white" />
 
                     <TextView
@@ -162,6 +163,7 @@
                     android:layout_weight="1"
                     android:background="@android:color/holo_green_dark"
                     android:text="Le Pay"
+                    android:onClick="payLePayBtn"
                     android:textColor="@android:color/white" />
             </LinearLayout>
 

@@ -192,6 +192,7 @@
         android:layout_marginTop="66dp"
         android:background="@drawable/roundedcancel"
         android:text="Batal"
+        android:onClick="batalBtn"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
@@ -211,6 +212,7 @@
         android:text="Konfirmasi"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
+        android:onClick="confirmBtn"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />

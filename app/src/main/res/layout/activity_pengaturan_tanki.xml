@@ -148,6 +148,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/roundedcancel"
+                android:onClick="cancelBtn"
                 android:text="Batal" />
 
             <Button
@@ -156,6 +157,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/roundedbutton"
+                android:onClick="saveBtn"
                 android:text="Save" />
         </LinearLayout>
 

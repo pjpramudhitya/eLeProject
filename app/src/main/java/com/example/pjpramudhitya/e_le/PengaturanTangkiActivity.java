@@ -13,6 +13,15 @@ public class PengaturanTangkiActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pengaturan_tanki);
     }
 
+    public void saveBtn(View v){
+        startActivity(new Intent(PengaturanTangkiActivity.this, KolamHomeActivity.class));
+    }
+
+    public void cancelBtn(View v){
+        startActivity(new Intent(PengaturanTangkiActivity.this, KolamHomeActivity.class));
+    }
+
+
     //Navbar is here
     public void homeBtn(View v){
         startActivity(new Intent(PengaturanTangkiActivity.this, KolamHomeActivity.class));

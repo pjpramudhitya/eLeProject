@@ -26,6 +26,8 @@
         <activity android:name=".IsiSaldoActivity"></activity>
         <activity android:name=".KolamPinLepayActivity"></activity>
         <activity android:name=".SellerBantuanActivity"></activity>
+        <activity android:name=".SellerHomeActivity"></activity>
+
     </application>
 
 </manifest>

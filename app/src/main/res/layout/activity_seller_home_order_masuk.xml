@@ -112,6 +112,7 @@
         app:layout_constraintTop_toTopOf="@+id/frameLayout" />
 
     <FrameLayout
+        android:id="@+id/frameLayout7"
         android:layout_width="287dp"
         android:layout_height="49dp"
         android:layout_marginBottom="8dp"
@@ -126,23 +127,49 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.451">
 
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Order Masuk :"
-            android:textSize="23dp"
-            android:textColor="#fff"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.465"
-            tools:layout_marginLeft="75dp"
-            tools:layout_marginTop="7dp" />
     </FrameLayout>
 
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Order Masuk :"
+        android:textColor="#fff"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout6"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout7"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout7"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout7"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_marginLeft="75dp"
+        tools:layout_marginTop="7dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="287dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_bottom"
+        android:onClick="ambilOrder"
+        android:text="Ambil"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout6"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout6"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout6"
+        app:layout_constraintVertical_bias="0.618"
+        tools:layout_marginTop="15dp" />
+
     <FrameLayout
+        android:id="@+id/frameLayout6"
         android:layout_width="287dp"
         android:layout_height="182dp"
         android:layout_marginBottom="8dp"
@@ -157,59 +184,61 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.747">
 
-        <LinearLayout
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="274dp"
+        android:layout_height="164dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout6"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout6"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout7"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView25"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:text="Pakan Lele 10 Kg"
+            android:textColor="#fff"
+            tools:layout_margin="3dp"
+            tools:padding="5dp" />
 
-            <TextView
-                android:id="@+id/textView25"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Pakan Lele 10 Kg"
-                android:textColor="#fff"
-                tools:layout_margin="3dp"
-                tools:padding="5dp" />
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jl. Pemuda no 6, Sagan , Yogyakarta"
+            android:textColor="#fff"
+            tools:layout_margin="3dp"
+            tools:padding="5dp" />
 
-            <TextView
-                android:id="@+id/textView24"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Jl. Pemuda no 6, Sagan , Yogyakarta"
-                android:textColor="#fff"
-                tools:layout_margin="3dp"
-                tools:padding="5dp" />
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Catatan : "
+            android:textColor="#fff"
+            tools:layout_marginLeft="3dp"
+            tools:layout_marginTop="8dp"
+            tools:padding="5dp" />
 
-            <TextView
-                android:id="@+id/textView26"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Catatan : "
-                android:textColor="#fff"
-                tools:layout_marginLeft="3dp"
-                tools:layout_marginTop="8dp"
-                tools:padding="5dp" />
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rumah warna Merah, tingkat 2"
+            android:textColor="#fff"
+            tools:layout_marginLeft="30dp" />
 
-            <TextView
-                android:id="@+id/textView27"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Rumah warna Merah, tingkat 2"
-                android:textColor="#fff"
-                tools:layout_marginLeft="30dp" />
-
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/shape_bottom"
-                android:onClick="ambilOrder"
-                android:text="Ambil"
-                android:textColor="#fff"
-                tools:layout_marginTop="15dp" />
-        </LinearLayout>
-
-    </FrameLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout4"

@@ -30,6 +30,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="164dp"
         android:layout_marginTop="8dp"
+        android:onClick="profile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.949"
@@ -58,15 +59,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="homeBtn"
-            app:srcCompat="@drawable/ic_dis_home" />
+            android:onClick="homeSeller"
+            app:srcCompat="@drawable/ic_penjual_aktif_home" />
 
         <ImageView
             android:id="@+id/btn_riwayat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="riwayatBtn"
+            android:onClick="riwayat"
             app:srcCompat="@drawable/ic_dis_riwayat" />
 
         <ImageView
@@ -74,7 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="bantuanBtn"
+            android:onClick="bantuan"
             app:srcCompat="@drawable/ic_dis_bantuan" />
 
         <ImageView
@@ -82,7 +83,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="profileBtn"
+            android:onClick="profile"
             app:srcCompat="@drawable/ic_dis_akun" />
     </LinearLayout>
 
@@ -195,6 +196,7 @@
         android:layout_marginStart="66dp"
         android:layout_marginTop="66dp"
         android:background="@drawable/roundedcancel"
+        android:onClick="batalPin"
         android:text="Batal"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
@@ -212,6 +214,7 @@
         android:layout_marginEnd="66dp"
         android:layout_marginTop="66dp"
         android:background="@drawable/roundedbutton"
+        android:onClick="konfirmasiAmbil"
         android:text="Konfirmasi"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"

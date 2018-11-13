@@ -30,6 +30,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="164dp"
         android:layout_marginTop="8dp"
+        android:onClick="profile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.949"
@@ -73,6 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:layout_weight="1"
+                android:onClick="riwayatWithdraw"
                 app:srcCompat="@drawable/ic_riwayat_withdraw" />
 
             <ImageView
@@ -82,6 +84,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
+                android:onClick="withdraw"
                 app:srcCompat="@drawable/ic_withdraw" />
         </LinearLayout>
     </FrameLayout>
@@ -127,9 +130,10 @@
             android:id="@+id/textView18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="orderMasuk"
             android:text="Order Masuk :"
-            android:textSize="23dp"
             android:textColor="#fff"
+            android:textSize="23dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -185,6 +189,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="homeSeller"
             app:srcCompat="@drawable/ic_penjual_aktif_home" />
 
         <ImageView
@@ -192,6 +197,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="riwayat"
             app:srcCompat="@drawable/ic_dis_riwayat" />
 
         <ImageView
@@ -199,6 +205,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="bantuan"
             app:srcCompat="@drawable/ic_dis_bantuan" />
 
         <ImageView
@@ -206,6 +213,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="profile"
             app:srcCompat="@drawable/ic_dis_akun" />
     </LinearLayout>
 

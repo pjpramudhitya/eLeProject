@@ -25,8 +25,17 @@
         <activity android:name=".BeliPakanKonfirmPembayaranActivity"></activity>
         <activity android:name=".IsiSaldoActivity"></activity>
         <activity android:name=".KolamPinLepayActivity"></activity>
+
+
         <activity android:name=".SellerBantuanActivity"></activity>
         <activity android:name=".SellerHomeActivity"></activity>
+        <activity android:name=".SellerHomeOrderActivity"></activity>
+        <activity android:name=".SellerHomeProsesActivity"></activity>
+        <activity android:name=".SellerPinLepayActivity"></activity>
+        <activity android:name=".SellerProfileActivity"></activity>
+        <activity android:name=".SellerRiwayatActivity"></activity>
+        <activity android:name=".SellerRiwayatWithdrawActivity"></activity>
+        <activity android:name=".SellerWithdrawActivity"></activity>
 
     </application>
 

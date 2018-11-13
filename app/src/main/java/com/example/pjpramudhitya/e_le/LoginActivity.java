@@ -24,16 +24,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void login(View v){
-<<<<<<< HEAD
         startActivity(new Intent(LoginActivity.this, KolamHomeActivity.class));
-=======
-        String username = (String) mUsernameView.getText().toString();
-        String password = (String) mPasswordView.getText().toString();
-
-
-            startActivity(new Intent(LoginActivity.this, KolamHomeActivity.class));
-
->>>>>>> 053265a521d81e64fdea01b1243d7fd7cfcc816a
     }
 
 }

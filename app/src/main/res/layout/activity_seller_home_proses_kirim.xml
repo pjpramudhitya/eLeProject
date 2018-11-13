@@ -30,14 +30,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="164dp"
         android:layout_marginTop="8dp"
-        android:onClick="profileBtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.949"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.021"
-        app:srcCompat="@drawable/profil" />
+        app:srcCompat="@drawable/profil_penjual" />
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -46,7 +45,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/halfroundedshape"
+        android:background="@drawable/penjual_halfround"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_logo">
@@ -59,7 +58,7 @@
         android:layout_height="54dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/bottom_halfroundedshape"
+        android:background="@drawable/penjual_bottom_halfround"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout">
@@ -74,13 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:layout_weight="1"
-<<<<<<< HEAD
-                android:onClick="beliPakanBtn"
-                app:srcCompat="@drawable/ic_beli_pakan" />
-=======
-                app:srcCompat="@drawable/ic_beli_pakan"
-                android:onClick="beliPakan"/>
->>>>>>> 053265a521d81e64fdea01b1243d7fd7cfcc816a
+                app:srcCompat="@drawable/ic_riwayat_withdraw" />
 
             <ImageView
                 android:id="@+id/btn_isi_saldo"
@@ -89,13 +82,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
-<<<<<<< HEAD
-                android:onClick="isiSaldoBtn"
-                app:srcCompat="@drawable/ic_isi_saldo" />
-=======
-                app:srcCompat="@drawable/ic_isi_saldo"
-                android:onClick="isiSaldo"/>
->>>>>>> 053265a521d81e64fdea01b1243d7fd7cfcc816a
+                app:srcCompat="@drawable/ic_withdraw" />
         </LinearLayout>
     </FrameLayout>
 
@@ -121,94 +108,107 @@
         app:layout_constraintEnd_toEndOf="@+id/frameLayout"
         app:layout_constraintTop_toTopOf="@+id/frameLayout" />
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="240dp"
-        android:layout_height="203dp"
+    <FrameLayout
+        android:layout_width="287dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:background="@drawable/penjual_halfround"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/container_lepay"
-        app:srcCompat="@drawable/img_tangki" />
-
-    <LinearLayout
-        android:id="@+id/btn_atur_tangki"
-        android:layout_width="145dp"
-        android:layout_height="37dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/secondaryroundedbutton"
-        android:orientation="horizontal"
-        android:onClick="aturTangkiBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10">
-
-        <ImageView
-            android:id="@+id/imageView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_setting" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Masuk :"
+            android:textSize="23dp"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.465"
+            tools:layout_marginLeft="75dp"
+            tools:layout_marginTop="7dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="287dp"
+        android:layout_height="182dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.747">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:text="Atur Tangki"
-            android:textAlignment="textStart"
-            android:textColor="#FFFFFF"
-            android:textSize="14sp" />
-    </LinearLayout>
+            android:orientation="vertical">
 
-    <FrameLayout
-        android:id="@+id/frameLayout2"
-        android:layout_width="340dp"
-        android:layout_height="26dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/halfroundedshape"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_atur_tangki">
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pakan Lele 10 Kg"
+                android:textColor="#fff"
+                tools:layout_margin="3dp"
+                tools:padding="5dp" />
 
-        <TextView
-            android:id="@+id/textView7"
-            android:textColor="#FFFFFF"
-            android:layout_margin="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Jadwal Pemberian Pakan" />
-    </FrameLayout>
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jl. Pemuda no 6, Sagan , Yogyakarta"
+                android:textColor="#fff"
+                tools:layout_margin="3dp"
+                tools:padding="5dp" />
 
-    <FrameLayout
-        android:id="@+id/frameLayout3"
-        android:layout_width="340dp"
-        android:layout_height="33dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:background="@drawable/bottom_halfroundedshape"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Catatan : "
+                android:textColor="#fff"
+                tools:layout_marginLeft="3dp"
+                tools:layout_marginTop="8dp"
+                tools:padding="5dp" />
 
-        <TextView
-            android:id="@+id/lbl_jadwal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="08.00"
-            android:textColor="#FFFFFF" />
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rumah warna Merah, tingkat 2"
+                android:textColor="#fff"
+                tools:layout_marginLeft="30dp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bottom"
+                android:text="Selesai"
+                android:textColor="#fff"
+                tools:layout_marginTop="15dp" />
+        </LinearLayout>
+
     </FrameLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="340dp"
         android:layout_height="45dp"
         android:layout_marginBottom="8dp"
@@ -227,54 +227,28 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="homeBtn"
-            app:srcCompat="@drawable/ic_aktif_home" />
+            app:srcCompat="@drawable/ic_penjual_aktif_home" />
 
         <ImageView
-            android:id="@+id/btn_riwayat"
+            android:id="@+id/imageView14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-<<<<<<< HEAD
-            android:onClick="riwayatBtn"
             app:srcCompat="@drawable/ic_dis_riwayat" />
 
         <ImageView
-            android:id="@+id/btn_bantuan"
+            android:id="@+id/imageView15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="bantuanBtn"
             app:srcCompat="@drawable/ic_dis_bantuan" />
 
         <ImageView
-            android:id="@+id/btn_profile"
+            android:id="@+id/imageView16"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="profileBtn"
             app:srcCompat="@drawable/ic_dis_akun" />
-=======
-            android:onClick="riwayat"
-            app:srcCompat="@drawable/ic_dis_riwayat" />
-
-        <ImageView
-            android:id="@+id/btn_help"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="bantuan"
-            app:srcCompat="@drawable/ic_dis_bantuan" />
-
-        <ImageView
-            android:id="@+id/btn_Akun"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_dis_akun"
-            android:onClick="akun"
-            />
->>>>>>> 053265a521d81e64fdea01b1243d7fd7cfcc816a
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

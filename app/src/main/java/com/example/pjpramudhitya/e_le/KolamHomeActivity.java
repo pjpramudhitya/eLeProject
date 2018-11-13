@@ -13,6 +13,7 @@ public class KolamHomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_kolam_home);
     }
 
+<<<<<<< HEAD
     public void isiSaldoBtn(View v){
         startActivity(new Intent(KolamHomeActivity.this, IsiSaldoActivity.class));
     }
@@ -41,4 +42,32 @@ public class KolamHomeActivity extends AppCompatActivity {
     public void profileBtn(View v){
         startActivity(new Intent(KolamHomeActivity.this, KolamProfileActivity.class));
     }
+=======
+
+    //error, balik ke halaman login terus
+    /*public void isiSaldo(View isiSaldo){
+
+        startActivity(new Intent(KolamHomeActivity.this, IsiSaldoActivity.class));
+
+    }
+
+    public void bantuan(View bantuan){
+        startActivity(new Intent(KolamHomeActivity.this, KolamBantuanActivity.class));
+    }
+
+    public void riwayat(View riwayat){
+        startActivity(new Intent(KolamHomeActivity.this, KolamRiwayatActivity.class));
+    }
+
+    public void akun(View akun){
+        startActivity(new Intent(KolamHomeActivity.this, KolamProfilActivity.class));
+    }
+
+    public void beliPakan(View beliPakan){
+        startActivity(new Intent(KolamHomeActivity.this, BeliPakanActivity.class));
+    }*/
+
+
+
+>>>>>>> 053265a521d81e64fdea01b1243d7fd7cfcc816a
 }

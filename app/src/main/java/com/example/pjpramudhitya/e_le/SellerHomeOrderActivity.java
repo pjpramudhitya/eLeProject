@@ -13,7 +13,24 @@ public class SellerHomeOrderActivity extends AppCompatActivity {
         setContentView(R.layout.activity_seller_home_order_masuk);
     }
 
-    public void ambil(View v){
+    public void ambilOrder(View v){
         startActivity(new Intent(SellerHomeOrderActivity.this, SellerPinLepayActivity.class));
+    }
+
+    //Navbar is here
+    public void homeSeller(View v){
+        startActivity(new Intent(SellerHomeOrderActivity.this, SellerHomeActivity.class));
+    }
+
+    public void riwayat(View v){
+        startActivity(new Intent(SellerHomeOrderActivity.this, SellerRiwayatActivity.class));
+    }
+
+    public void bantuan(View v){
+        startActivity(new Intent(SellerHomeOrderActivity.this, SellerBantuanActivity.class));
+    }
+
+    public void profile(View v){
+        startActivity(new Intent(SellerHomeOrderActivity.this, SellerProfileActivity.class));
     }
 }

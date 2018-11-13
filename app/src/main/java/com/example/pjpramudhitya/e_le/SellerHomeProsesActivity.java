@@ -16,4 +16,21 @@ public class SellerHomeProsesActivity extends AppCompatActivity {
     public void selesai(View v){
         startActivity(new Intent(SellerHomeProsesActivity.this, SellerHomeActivity.class));
     }
+
+    //Navbar is here
+    public void homeSeller(View v){
+        startActivity(new Intent(SellerHomeProsesActivity.this, SellerHomeActivity.class));
+    }
+
+    public void riwayat(View v){
+        startActivity(new Intent(SellerHomeProsesActivity.this, SellerRiwayatActivity.class));
+    }
+
+    public void bantuan(View v){
+        startActivity(new Intent(SellerHomeProsesActivity.this, SellerBantuanActivity.class));
+    }
+
+    public void profile(View v){
+        startActivity(new Intent(SellerHomeProsesActivity.this, SellerProfileActivity.class));
+    }
 }

@@ -10,7 +10,7 @@ public class SellerPinLepayActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kolam_pin_lepay);
+        setContentView(R.layout.activity_seller_pin_lepay);
     }
 
     public void konfirmasiAmbil(View v){
@@ -18,6 +18,23 @@ public class SellerPinLepayActivity extends AppCompatActivity {
     }
 
     public void batalPin(View v){
-        startActivity(new Intent(SellerPinLepayActivity.this, SellerHomeOrderActivity.class));
+        startActivity(new Intent(SellerPinLepayActivity.this, SellerHomeActivity.class));
+    }
+
+    //Navbar is here
+    public void homeSeller(View v){
+        startActivity(new Intent(SellerPinLepayActivity.this, SellerHomeActivity.class));
+    }
+
+    public void riwayat(View v){
+        startActivity(new Intent(SellerPinLepayActivity.this, SellerRiwayatActivity.class));
+    }
+
+    public void bantuan(View v){
+        startActivity(new Intent(SellerPinLepayActivity.this, SellerBantuanActivity.class));
+    }
+
+    public void profile(View v){
+        startActivity(new Intent(SellerPinLepayActivity.this, SellerProfileActivity.class));
     }
 }

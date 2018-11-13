@@ -203,7 +203,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/shape_bottom"
-                android:onClick="ambil"
+                android:onClick="ambilOrder"
                 android:text="Ambil"
                 android:textColor="#fff"
                 tools:layout_marginTop="15dp" />

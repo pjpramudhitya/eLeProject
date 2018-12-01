@@ -168,7 +168,6 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="The Gibs"
                 android:textColor="#000000"
                 android:textSize="12sp"
                 tools:layout_editor_absoluteX="44dp"
@@ -189,7 +188,6 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="The_Gibs_DduDdu"
                 android:textColor="#000000"
                 android:textSize="12sp"
                 tools:layout_editor_absoluteX="44dp"
@@ -210,7 +208,25 @@
                 android:ems="10"
                 android:inputType="textEmailAddress"
                 android:padding="5dp"
-                android:text="thegibs@lala.com"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                tools:layout_editor_absoluteX="44dp"
+                tools:layout_editor_absoluteY="260dp" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat" />
+
+            <EditText
+                android:id="@+id/txt_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/greyrounded"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
                 android:textColor="#000000"
                 android:textSize="12sp"
                 tools:layout_editor_absoluteX="44dp"
@@ -231,11 +247,48 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="085789721294"
                 android:textColor="#000000"
                 android:textSize="12sp"
                 tools:layout_editor_absoluteX="44dp"
                 tools:layout_editor_absoluteY="260dp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password" />
+
+            <EditText
+                android:id="@+id/txt_password"
+                android:layout_width="match_parent"
+                android:background="@drawable/greyrounded"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberPassword"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                tools:layout_editor_absoluteX="44dp"
+                tools:layout_editor_absoluteY="260dp"/>
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pin Lepay" />
+
+            <EditText
+                android:id="@+id/txt_pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:background="@drawable/greyrounded"
+                android:inputType="numberPassword"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                tools:layout_editor_absoluteX="44dp"
+                tools:layout_editor_absoluteY="260dp"/>
 
         </LinearLayout>
     </ScrollView>
